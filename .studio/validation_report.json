@@ -1,0 +1,47 @@
+{
+  "pass": false,
+  "checks": {
+    "file_existence": {
+      "pass": true,
+      "details": "All files (demo.mp4, demo.gif, demo.webp, hero.webp) exist in deliverables directory."
+    },
+    "file_sizes": {
+      "pass": false,
+      "details": "demo.webp is 4183380 bytes (~4.18MB), which exceeds the <3MB animated WebP limit. demo.mp4 is 4.74MB (<5MB), demo.gif is 2.67MB (<5MB), hero.webp is ~91KB (<200KB)."
+    },
+    "video_codec_and_dimensions": {
+      "pass": true,
+      "details": "H.264 codec and 1920x1080 dimensions verified."
+    },
+    "duration_accuracy": {
+      "pass": true,
+      "details": "Actual duration: 28.1s. Target duration: 28.0s. Difference: 0.1s (<5s limit)."
+    },
+    "multi_frame_visual_diversity": {
+      "pass": true,
+      "details": "SSIMs against 0% frame: 0.447 (25%), 0.610 (50%), 0.614 (75%). None are >0.97."
+    },
+    "scene_count": {
+      "pass": false,
+      "details": "0 scene changes detected (threshold 0.3). Expected >= 2."
+    },
+    "frame_file_size_heuristic": {
+      "pass": true,
+      "details": "Extracted frame file sizes: 405KB, 1401KB, 513KB, 523KB. They are not within 10% of each other."
+    },
+    "interaction_verification": {
+      "pass": true,
+      "details": "SSIM before/after pointermove at ~13.5s is 0.867 (<0.99), indicating successful canvas mutation."
+    }
+  },
+  "extracted_frames": [
+    "/tmp/val_f0.png",
+    "/tmp/val_f25.png",
+    "/tmp/val_f50.png",
+    "/tmp/val_f75.png",
+    "/tmp/val_pm_before.png",
+    "/tmp/val_pm_after.png",
+    "/tmp/val_pm_exact_before.png",
+    "/tmp/val_pm_exact_after.png"
+  ]
+}

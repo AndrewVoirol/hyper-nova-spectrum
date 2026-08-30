@@ -1,0 +1,99 @@
+{
+  "project": "hyper-nova-spectrum",
+  "choreography": [
+    {
+      "marker": "scene_01_cold_open_start"
+    },
+    {
+      "action": "click",
+      "target": { "text": "Calm" },
+      "notes": "Select Calm preset for zero-entropy state"
+    },
+    {
+      "action": "wait",
+      "duration_ms": 3000
+    },
+    {
+      "marker": "scene_01_cold_open_end"
+    },
+    {
+      "marker": "scene_02_rising_start"
+    },
+    {
+      "action": "click",
+      "target": { "text": "Singularity" }
+    },
+    {
+      "action": "wait",
+      "duration_ms": 500
+    },
+    {
+      "action": "drag",
+      "target": { "text": "twist" },
+      "delta": { "x": -50, "y": 0 }
+    },
+    {
+      "action": "drag",
+      "target": { "text": "bloomStrength" },
+      "delta": { "x": 30, "y": 0 }
+    },
+    {
+      "action": "drag",
+      "target": { "coords": { "x": 960, "y": 540 } },
+      "delta": { "x": 0, "y": 300 },
+      "duration_ms": 2000,
+      "notes": "Vertical polar elevation tilt"
+    },
+    {
+      "action": "scroll",
+      "target": { "coords": { "x": 960, "y": 540 } },
+      "delta_y": -800,
+      "duration_ms": 1500,
+      "notes": "Scroll zoom dolly into core"
+    },
+    {
+      "action": "wait",
+      "duration_ms": 2000
+    },
+    {
+      "marker": "scene_02_rising_end"
+    },
+    {
+      "marker": "scene_03_climax_start"
+    },
+    {
+      "action": "click",
+      "target": { "text": "isWarping" },
+      "notes": "Engage Warp drive"
+    },
+    {
+      "action": "mouse_move",
+      "path": [
+        {"x": 960, "y": 540},
+        {"x": 700, "y": 400},
+        {"x": 1200, "y": 650},
+        {"x": 960, "y": 540}
+      ],
+      "duration_ms": 4500,
+      "notes": "Mouse steering guidance through warp tunnel"
+    },
+    {
+      "marker": "scene_03_climax_end"
+    },
+    {
+      "marker": "scene_04_cooldown_start"
+    },
+    {
+      "action": "click",
+      "target": { "text": "isWarping" },
+      "notes": "Disengage Warp drive for smooth deceleration"
+    },
+    {
+      "action": "wait",
+      "duration_ms": 3500
+    },
+    {
+      "marker": "scene_04_cooldown_end"
+    }
+  ]
+}

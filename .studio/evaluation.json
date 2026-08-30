@@ -1,0 +1,59 @@
+{
+  "project": "ais-hyper-nova-spectrum",
+  "archetype": "webgl_3d_canvas",
+  "timestamp": "2026-08-29T21:58:00Z",
+  "pipelineVerdict": "PASS",
+  "checkpoints": {
+    "hostCliBinaries": true,
+    "archetypeClassification": true,
+    "maximumVisualDelta": true,
+    "cursorVisibilityPreserved": true,
+    "noLinearFormTyping": true,
+    "climaxProportionMet": true,
+    "singleBrowserInvariant": true,
+    "pointerEventsCompliant": true,
+    "directorGate1Passed": true,
+    "directorGate2Passed": true,
+    "deterministicValidationPassed": true,
+    "postEditCriticPassed": true,
+    "retrospectiveRecorded": true,
+    "targetedTeardownComplete": true
+  },
+  "deliverables": {
+    "mp4": {
+      "path": "deliverables/demo.mp4",
+      "bytes": 14829573,
+      "limit": 15728640,
+      "resolution": "1280x720",
+      "codec": "h264"
+    },
+    "webp": {
+      "path": "deliverables/demo.webp",
+      "bytes": 7358506,
+      "limit": 8388608
+    },
+    "gif": {
+      "path": "deliverables/demo.gif",
+      "bytes": 8750755,
+      "limit": 10485760
+    },
+    "hero": {
+      "path": "deliverables/hero.webp",
+      "bytes": 193130,
+      "limit": 204800
+    }
+  },
+  "qualityMetrics": {
+    "durationActual": 28.88,
+    "durationTarget": 28.7,
+    "durationDelta": 0.18,
+    "ssimScores": {
+      "f0_vs_f25": 0.66,
+      "f0_vs_f50": 0.1,
+      "f0_vs_f75": 0.12
+    },
+    "allSsimStatic": false,
+    "sceneChangeCount": 3,
+    "frameSizeVariance": 0.79
+  }
+}

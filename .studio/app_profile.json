@@ -1,0 +1,122 @@
+{
+  "project": "hyper-nova-spectrum",
+  "framework": "vite-react",
+  "devServerCommand": "npm run dev",
+  "archetype": "webgl_3d_canvas",
+  "hasCanvas": true,
+  "canvasType": "threejs",
+  "darkModeType": "none",
+  "maxVisualDeltaStates": {
+    "stateA": "Idle Nebula Orbit State: Initial populated state showcasing a custom Three.js galaxy particle system (100,000 particles) with steady rotation (0.2), 1.5 bloom strength, amber/blue spectrum balance, Reinhard tone mapping, and full glassmorphic HUD telemetry overlay.",
+    "stateB": "Singularity Warp Climax State: Climax transformed state engaging high-speed hyperspace warp tunnel (4,000 lines) with sharp redshift acceleration curve, intense bloom (2.8+), destination singularity approaching at z=-200, chromatic aberration, mouse-reactive banking & vibration, camera FOV expansion (75° -> 105°), camera shake, and UI toggled off."
+  },
+  "seedsAndPresets": {
+    "urlQueryParams": [],
+    "keyboardShortcuts": [],
+    "fixtures": [
+      "components/UIOverlay.tsx#PRESETS"
+    ],
+    "presets": [
+      {
+        "name": "Nebula",
+        "icon": "🌌",
+        "values": {
+          "rotationSpeed": 0.3,
+          "spectrumShift": 0.65,
+          "entropy": 0.7,
+          "twist": 0.3,
+          "starSize": 1.8,
+          "bloomStrength": 2.2,
+          "singularityDepth": 0
+        }
+      },
+      {
+        "name": "Singularity",
+        "icon": "🕳️",
+        "values": {
+          "rotationSpeed": 1.5,
+          "spectrumShift": 0.1,
+          "entropy": 0.15,
+          "twist": -0.8,
+          "starSize": 0.6,
+          "bloomStrength": 2.8,
+          "singularityDepth": 0.85
+        }
+      },
+      {
+        "name": "Calm",
+        "icon": "✨",
+        "values": {
+          "rotationSpeed": 0.1,
+          "spectrumShift": 0.0,
+          "entropy": 0,
+          "twist": 0,
+          "starSize": 0.8,
+          "bloomStrength": 1.0,
+          "singularityDepth": 0
+        }
+      }
+    ],
+    "controls": [
+      { "name": "isWarping", "type": "toggle", "default": false },
+      { "name": "rotationSpeed", "type": "slider", "min": 0, "max": 2, "step": 0.1, "default": 0.2 },
+      { "name": "spectrumShift", "type": "slider", "min": 0, "max": 1, "step": 0.01, "default": 0 },
+      { "name": "entropy", "type": "slider", "min": 0, "max": 1, "step": 0.01, "default": 0 },
+      { "name": "twist", "type": "slider", "min": -1, "max": 1, "step": 0.1, "default": 0 },
+      { "name": "starSize", "type": "slider", "min": 0.1, "max": 3.0, "step": 0.1, "default": 1.0 },
+      { "name": "bloomStrength", "type": "slider", "min": 0, "max": 3.0, "step": 0.1, "default": 1.5 },
+      { "name": "singularityDepth", "type": "slider", "min": 0, "max": 1, "step": 0.01, "default": 0 },
+      { "name": "uiHidden", "type": "toggle", "default": false }
+    ]
+  },
+  "temporalSignatures": {
+    "slowBuilds": [
+      {
+        "file": "components/LoadingOverlay.tsx",
+        "line": 13,
+        "pattern": "setTimeout(() => setVisible(false), 1200)"
+      }
+    ],
+    "burstEvents": [
+      {
+        "file": "components/Scene.tsx",
+        "line": 316,
+        "pattern": "float warpEase = pow(uWarpFactor, 4.0)"
+      },
+      {
+        "file": "components/UIOverlay.tsx",
+        "line": 343,
+        "pattern": "onClick={() => setIsWarping(!isWarping)}"
+      },
+      {
+        "file": "components/UIOverlay.tsx",
+        "line": 155,
+        "pattern": "onClick={() => onApplyPreset(preset.values)}"
+      }
+    ],
+    "continuousLoops": [
+      {
+        "file": "components/Scene.tsx",
+        "line": 645,
+        "pattern": "requestAnimationFrame(animate)"
+      }
+    ],
+    "detailIndicators": [
+      {
+        "file": "components/UIOverlay.tsx",
+        "line": 122,
+        "pattern": "<Activity size={14} className={isWarping ? 'text-red-500 animate-pulse' : 'text-green-500'} />"
+      },
+      {
+        "file": "components/UIOverlay.tsx",
+        "line": 137,
+        "pattern": "Manual Guidance Active reticle indicator with radar ping"
+      },
+      {
+        "file": "components/UIOverlay.tsx",
+        "line": 173,
+        "pattern": "Telemetry counters: ROTATION, ENTROPY, SPECTRUM, SPIRAL TWIST, STAR MASS, GLOW INTENSITY, SINGULARITY DEPTH"
+      }
+    ]
+  }
+}

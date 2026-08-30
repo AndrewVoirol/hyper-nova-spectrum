@@ -1,0 +1,51 @@
+edl:
+  project: "hyper-nova-spectrum"
+  target_edit_duration: 28.7
+  viewport:
+    width: 1920
+    height: 1080
+    dpr: 2.0
+  
+  scenes:
+    - name: "01_cold_open"
+      start_marker: "scene_01_start"
+      end_marker: "scene_01_end"
+      playback_speed: 1.0
+      crop: null
+      wow_level: "establishing"
+      notes: "Structured, zero-entropy galaxy (Calm preset) with steady ambient motion and clean UI."
+
+    - name: "02_rising_action"
+      start_marker: "scene_02_start"
+      end_marker: "scene_02_end"
+      playback_speed: 1.2
+      crop: null
+      wow_level: "rising"
+      notes: "Switch to Singularity, adjust physics sliders, 3D OrbitControls camera drag (vertical polar elevation tilt) followed by scroll zoom dolly into core."
+
+    - name: "03_climax"
+      start_marker: "scene_03_start"
+      end_marker: "scene_03_end"
+      playback_speed: 0.45
+      crop: null
+      wow_level: "climax"
+      notes: "Dynamic hyperspace warp tunnel burst with mouse steering guidance and chromatic aberration."
+
+    - name: "04_cooldown"
+      start_marker: "scene_04_start"
+      end_marker: "scene_04_end"
+      playback_speed: 1.0
+      crop: null
+      wow_level: "cooldown"
+      notes: "Smooth deceleration into singularity event horizon, camera settles into new steady state orbit."
+
+  transitions:
+    - between: ["01_cold_open", "02_rising_action"]
+      type: "cut"
+      duration: 0.0
+    - between: ["02_rising_action", "03_climax"]
+      type: "cut"
+      duration: 0.0
+    - between: ["03_climax", "04_cooldown"]
+      type: "dissolve"
+      duration: 0.5

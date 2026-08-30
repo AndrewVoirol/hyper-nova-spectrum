@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-08-30T14:56:45.142230+00:00",
+  "containerChecks": {
+    "mp4Exists": true,
+    "mp4Pass": true,
+    "mp4Size": 14829573,
+    "mp4SizeLimit": 15728640,
+    "webpExists": true,
+    "webpPass": true,
+    "webpSize": 7358506,
+    "webpSizeLimit": 8388608,
+    "gifExists": true,
+    "gifPass": true,
+    "gifSize": 8750755,
+    "gifSizeLimit": 10485760,
+    "heroExists": true,
+    "heroPass": true,
+    "heroSize": 193130,
+    "heroSizeLimit": 204800,
+    "resolution": "1280x720",
+    "codec": "h264"
+  },
+  "contentChecks": {
+    "durationActual": 28.88,
+    "durationTarget": 28.7,
+    "durationDelta": 0.18,
+    "durationPass": true,
+    "ssimScores": {
+      "f0_vs_f25": 0.66,
+      "f0_vs_f50": 0.1,
+      "f0_vs_f75": 0.12
+    },
+    "allSsimStatic": false,
+    "sceneChangeCount": 3,
+    "frameSizeVariance": 0.79
+  },
+  "pass": true,
+  "verdict": "PASS"
+}

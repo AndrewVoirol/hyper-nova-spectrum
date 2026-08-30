@@ -1,0 +1,53 @@
+{
+  "project": {
+    "name": "Hyper-Nova Spectrum",
+    "slug": "ais-hyper-nova-spectrum",
+    "description": "An interactive WebGL galaxy simulator built with Three.js and custom GLSL shaders. 100,000 particles form a spiral galaxy that you can twist, dissolve, hue-shift, and warp through — all in real time.",
+    "category": "3d-visualization",
+    "tags": [
+      "lucide-react",
+      "three",
+      "@vitejs/plugin-react"
+    ],
+    "status": "shipped",
+    "aistudioUrl": ""
+  },
+  "tech": {
+    "framework": "vite",
+    "frameworkVersion": "^6.2.0",
+    "react": "^19.2.0",
+    "styling": "tailwind",
+    "stylingVersion": "^3.4.17",
+    "three": "^0.181.1",
+    "usesGeminiApi": false,
+    "geminiApiRole": "none",
+    "keyDependencies": [
+      "lucide-react",
+      "three",
+      "@vitejs/plugin-react",
+      "autoprefixer"
+    ],
+    "hasBackend": false
+  },
+  "quality": {
+    "hasReadme": true,
+    "readmeIsCustom": true,
+    "hasDemoGif": false,
+    "hasScreenshots": true,
+    "screenshotCount": 4,
+    "hasFavicon": false,
+    "hasCustomPackageName": true,
+    "hasScaffoldCruft": false,
+    "buildVerified": false,
+    "lastVerifiedDate": null
+  },
+  "repo": {
+    "github": "https://github.com/AndrewVoirol/hyper-nova-spectrum.git",
+    "defaultBranch": "main"
+  },
+  "_meta": {
+    "generatedAt": "2026-08-07T02:03:57.719Z",
+    "generatedBy": "ais-fleet/generate-manifests",
+    "needsReview": []
+  }
+}

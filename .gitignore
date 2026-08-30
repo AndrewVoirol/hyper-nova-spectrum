@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Agentic Studio temporary files & raw recordings
+.agents/
+.studio/tmp/
+.studio/*.webm
+.studio/*.log
+skills/

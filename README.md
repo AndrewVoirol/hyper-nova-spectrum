@@ -1,4 +1,4 @@
-![Hyper-Nova Spectrum — warp drive engaged](screenshots/warp-engaged.png)
+![Hyper-Nova Spectrum demo](screenshots/demo.gif)
 
 # Hyper-Nova Spectrum
 
@@ -7,7 +7,7 @@ An interactive WebGL galaxy simulator built with Three.js and custom GLSL shader
 ## Quick Start
 
 ```bash
-git clone https://github.com/andrewvoirol/hyper-nova-spectrum.git
+git clone https://github.com/AndrewVoirol/hyper-nova-spectrum.git
 cd hyper-nova-spectrum
 npm install
 npm run dev
@@ -22,6 +22,8 @@ Opens at `http://localhost:3000`
 ![Nebula preset — scattered particle cloud with purple spectrum shift](screenshots/nebula-preset.png)
 
 ![Warp engaged — streaking light tunnel with mouse steering](screenshots/warp-engaged.png)
+
+![Clean view — immersive cinematic galaxy rendering with UI hidden](screenshots/clean-view.png)
 
 ## How It Works
 
